@@ -12,11 +12,32 @@
   &__icon {
     fill: none;
     display: inline-block;
-    width: 16px;
     height: 15px;
+    width: 25px;
     border: 2px solid $headers-color;
     border-radius: 2px;
     margin-right: 7px;
+    @media screen and (min-width: 280px) {
+      width: 23px;
+    }
+    @media screen and (min-width: 341px) {
+      width: 21px;
+    }
+    @media screen and (min-width: 351px) {
+      width: 20px;
+    }
+    @media screen and (min-width: 371px) {
+      width: 19px;
+    }
+    @media screen and (min-width: 391px) {
+      width: 18px;
+    }
+    @media screen and (min-width: 401px) {
+      width: 17px;
+    }
+    @media screen and (min-width: 421px) {
+      width: 16px;
+    }
   }
 
   &__input {

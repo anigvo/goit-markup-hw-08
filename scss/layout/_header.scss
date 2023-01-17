@@ -30,6 +30,17 @@
                 @media screen and (min-width: 768px) {
                         display: flex;
                 }
+                &--left {
+                        margin-left: auto;
+                
+                        @media screen and (min-width: 768px) {
+                                flex-direction: column;
+                        }              
+                        @media screen and (min-width: 1200px) {
+                                flex-direction: unset;
+                        }
+                        
+                        }
         }
 
 
@@ -89,20 +100,6 @@
         }
     
     
-    &__list--left {
-        margin-left: auto;
-
-        @media screen and (min-width: 768px) {
-                padding: 21px 15px;
-                flex-direction: column;
-        }              
-        @media screen and (min-width: 1200px) {
-                padding: 0;
-                flex-direction: unset;
-        }
-        
-        }
-    
     &__item--contacts:not(:last-child) {
             
             @media screen and (min-width: 768px) {
@@ -118,5 +115,25 @@
     &__icon {
             fill: currentColor;
             margin-right: 10px;
+
+            &--letter {
+                      width: 14px;
+                      height: 10px;  
+
+                @media screen and (min-width: 1200px) {
+                      width: 16px;
+                      height: 12px;  
+                }
+                
+            }
+            &--phone {
+                      width: 10px;
+                      height: 14px;  
+                @media screen and (min-width: 1200px) {
+                     width: 10px;
+                     height: 16px;   
+                }
+                
+            }
         }
 }

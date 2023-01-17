@@ -8,7 +8,8 @@
             }
 
         &__item {
-            margin: auto;
+            margin-left: auto;
+            margin-right: auto;
             flex-basis: 100%;
         
             @media screen and (min-width: 768px) {
@@ -16,17 +17,20 @@
             }
                         
             @media screen and (min-width: 1200px) {
-                margin: 0;
                 flex-basis: calc((100% - 3*30px)/4);
         }
         }
         &__icon-box {
-            text-align: center;
-            padding: 25px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 120px;
             background-color: $secondary-background-color;
             margin-bottom: 30px;
             border-radius: 4px;
         }
+
+
     
         &__title {
             color: $headers-color;
@@ -37,8 +41,10 @@
             margin-bottom: 10px;
             text-align: center;
 
-            @media screen and (min-width: 768px) {}
+            @media screen and (min-width: 768px) {
                 text-align: start;
+            }
+                
             }
     
         &__content {

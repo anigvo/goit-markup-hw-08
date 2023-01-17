@@ -98,6 +98,9 @@
     &--color {
         color: $logo-secondary-color;
     }
+    &.current {
+        color: $logo-secondary-color;
+     }
 }
 
 &__button {

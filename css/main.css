@@ -111,6 +111,25 @@ ul {
     display: flex;
   }
 }
+.header__list--left {
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .header__list--left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__list--left {
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+  }
+}
 .header__item--pages:not(:last-child) {
   margin-right: 50px;
 }
@@ -163,27 +182,6 @@ ul {
 .header__link.current {
   color: #2196F3;
 }
-.header__list--left {
-  margin-left: auto;
-}
-@media screen and (min-width: 768px) {
-  .header__list--left {
-    padding: 21px 15px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header__list--left {
-    padding: 0;
-    -webkit-box-orient: unset;
-    -webkit-box-direction: unset;
-        -ms-flex-direction: unset;
-            flex-direction: unset;
-  }
-}
 @media screen and (min-width: 768px) {
   .header__item--contacts:not(:last-child) {
     margin-bottom: 10px;
@@ -198,6 +196,26 @@ ul {
 .header__icon {
   fill: currentColor;
   margin-right: 10px;
+}
+.header__icon--letter {
+  width: 14px;
+  height: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .header__icon--letter {
+    width: 16px;
+    height: 12px;
+  }
+}
+.header__icon--phone {
+  width: 10px;
+  height: 14px;
+}
+@media screen and (min-width: 1200px) {
+  .header__icon--phone {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .footer {
@@ -363,6 +381,16 @@ ul {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .container {
@@ -603,11 +631,46 @@ ul {
 .checkbox__icon {
   fill: none;
   display: inline-block;
-  width: 16px;
   height: 15px;
+  width: 25px;
   border: 2px solid #212121;
   border-radius: 2px;
   margin-right: 7px;
+}
+@media screen and (min-width: 280px) {
+  .checkbox__icon {
+    width: 23px;
+  }
+}
+@media screen and (min-width: 341px) {
+  .checkbox__icon {
+    width: 21px;
+  }
+}
+@media screen and (min-width: 351px) {
+  .checkbox__icon {
+    width: 20px;
+  }
+}
+@media screen and (min-width: 371px) {
+  .checkbox__icon {
+    width: 19px;
+  }
+}
+@media screen and (min-width: 391px) {
+  .checkbox__icon {
+    width: 18px;
+  }
+}
+@media screen and (min-width: 401px) {
+  .checkbox__icon {
+    width: 17px;
+  }
+}
+@media screen and (min-width: 421px) {
+  .checkbox__icon {
+    width: 16px;
+  }
 }
 .checkbox__input {
   position: absolute;
@@ -734,11 +797,18 @@ ul {
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
+  width: 100%;
+}
+@media screen and (min-width: 400px) {
+  .hero__title {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
     line-height: 1.36;
+    width: 696px;
   }
 }
 
@@ -801,7 +871,8 @@ ul {
   }
 }
 .feature__item {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
@@ -813,14 +884,21 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .feature__item {
-    margin: 0;
     -ms-flex-preferred-size: calc((100% - 90px) / 4);
         flex-basis: calc((100% - 90px) / 4);
   }
 }
 .feature__icon-box {
-  text-align: center;
-  padding: 25px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 120px;
   background-color: #F5F4FA;
   margin-bottom: 30px;
   border-radius: 4px;
@@ -833,7 +911,11 @@ ul {
   letter-spacing: 0.03em;
   margin-bottom: 10px;
   text-align: center;
-  text-align: start;
+}
+@media screen and (min-width: 768px) {
+  .feature__title {
+    text-align: start;
+  }
 }
 .feature__content {
   font-size: 14px;
@@ -1321,6 +1403,9 @@ ul {
   color: #2196F3;
 }
 .mobile-menu__link--color {
+  color: #2196F3;
+}
+.mobile-menu__link.current {
   color: #2196F3;
 }
 .mobile-menu__button {
