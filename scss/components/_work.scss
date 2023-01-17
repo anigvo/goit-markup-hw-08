@@ -1,0 +1,39 @@
+.work__container {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+}
+
+.work {
+    display: flex;
+    gap: 30px;
+
+    &__item {
+        position: relative;
+    }
+    
+    &__img {
+        display: block;
+        max-width: 100%;
+    }
+    
+    &__text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 27px 0px;
+        width: 100%;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $secondary-text-color;
+        background-color: $work-description-color;
+    
+    }
+}
+

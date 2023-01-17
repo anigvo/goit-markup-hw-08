@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/raleway-v28-latin-700.woff2') format('woff2'),
+        url('../fonts/raleway-v28-latin-700.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/roboto-v30-latin_cyrillic-regular.woff2') format('woff2'),
+        url('../fonts/roboto-v30-latin_cyrillic-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+        url('../fonts/roboto-v30-latin_cyrillic-500.woff2') format('woff2'),
+        url('../fonts/roboto-v30-latin_cyrillic-500.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/roboto-v30-latin_cyrillic-700.woff2') format('woff2'),
+        url('../fonts/roboto-v30-latin_cyrillic-700.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+        url('../fonts/roboto-v30-latin_cyrillic-900.woff2') format('woff2'),
+        url('../fonts/roboto-v30-latin_cyrillic-900.woff') format('woff');
+}
+
+    $logo-primary-color: #000000;
+    $logo-secondary-color: #2196F3;
+    $headers-color: #212121;
+    $primary-text-color: #757575;
+    $secondary-text-color: #FFFFFF;
+    $body-background-color: #FFFFFF;
+    $secondary-background-color: #F5F4FA;
+    $footer-contacts-color: #FFFFFF60;
+    $primary-background-color: #2F303A;
+    $hero-button-active: #188CE8;
+    $header-border: #ECECEC;
+    $example-item-border: #EEEEEE;
+    $hero-background-color: #2F303A80;
+    $hero-overlay-color: #C4C4C4;
+    $icon-color: #AFB1B8;
+    $footer-icon-color: #FFFFFF16;
+    $backdrop-color: #00000032;
+    $example-active-color: #2196F3E6;
+    $work-description-color: #2F303ACC;
+    $modal-border-button: #0000001A;
+    $footer-form-text: #FFFFFF99;
+    $textarea-color: #75757580;
+    $stick-menu-color: #21212132;
